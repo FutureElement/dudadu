@@ -2,8 +2,11 @@
 
 ### frontend
 ddd-oauth
+
 ddd-web-bff
+
 ddd-app-bff
+
 
 ### core
 ddd-org
@@ -25,8 +28,15 @@ ddd-report
 
 ### plugin
 ddd-plugin-management
+
 ddd-plugin-http
+
 ddd-plugin-c4
+
 ddd-plugin-jenkins
+
 ddd-plugin-sonarqube
 
+ddd-plugin-api-test
+
+ddd-plugin-sihei
