@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: DDD-ORG
+  data:
+    mongodb:
+      database: ddd-org
+  cloud:
+    consul:
+      discovery:
+        instance-id: ${spring.application.name}:${server.port}
+        service_name: ${spring.application.name}
+        preferIpAddress: true
+server:
+  port: 0

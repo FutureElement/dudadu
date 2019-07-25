@@ -1,0 +1,22 @@
+version: '3.3'
+
+services:
+  consul:
+    image: consul
+    ports:
+      - 8500:8500
+      - 8300:8300
+      - 8301:8301
+      - 8302:8302
+      - 8600:8600
+    environment:
+      - CONSUL_BIND_INTERFACE=eth0
+    deploy:
+      mode: replicated
+      replicas: 1
+      update_config:
+        parallelism: 1
+        delay: 30s
+      restart_policy:
+        condition: on-failure
+    
